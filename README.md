@@ -1,7 +1,7 @@
 Takes a file and creates a clones
 
 # Install
-To use it you need (dron)[https://github.com/morulus/dron] util. I assume that you already have it.
+To use it you need [dron](https://github.com/morulus/dron) utility. I assume that you already have it.
 
 ```terminal
 npm install dron-pipette -g
@@ -34,10 +34,26 @@ File MyNextModule.js created
 ## --parse-name
 
 All substrings in the new file's content, which equals to the source file name will be replaced with a new filename.
+
+_myModule.js_
+```js
+class myModule {
+
+}
 ```
+
+```terminal
 dron pipette anyModule.js newModule.js --parse-name
 
 ```
+
+_newModule.js_
+```js
+class newModule {
+
+}
+```
+
 # License
 MIT, 2016
 
