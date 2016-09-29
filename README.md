@@ -43,7 +43,7 @@ class myModule {
 ```
 
 ```terminal
-dron pipette anyModule.js newModule.js --parse-name
+dron pipette myModule.js newModule.js --parse-name
 
 ```
 
