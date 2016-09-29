@@ -1,0 +1,18 @@
+{
+  "name": "dron-pipette",
+  "version": "0.0.1",
+  "license": "MIT",
+  "dron": {
+    "version": "0.0.1"
+  },
+  "description": "Utility for smart file cloning",
+  "keywords": [
+    "dron",
+    "module"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vladimir Kalmykov <vladimirmorulus@gmail.com>"
+}

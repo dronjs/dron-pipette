@@ -1,0 +1,2 @@
+usage: dron pipette <sourcefile> <targetfile> [--parse-name]
+       dron pipette <sourcefile> [--multiply] [--parse-name]
