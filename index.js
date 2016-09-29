@@ -59,7 +59,7 @@ function operationist(file, options) {
 	}
 }
 
-function pickFile(filename, targetFilename, options) {
+function pickFile(filename, targetFilename, options, once) {
 	return function() {
 		var file = this.touch(filename);
 		if (!file.exists()) {
@@ -79,7 +79,7 @@ function pickFile(filename, targetFilename, options) {
 						}
 					});
 				} else {
-					return substituteFile(file, newFile, options, true);
+					return substituteFile(file, newFile, options, once);
 				}
 			} else {
 				return operationist(file, options);
@@ -92,7 +92,7 @@ module.exports = function factory(argv) {
 
 	if (argv._) {
 		if (argv._[2]) {
-			return pickFile(argv._[1], argv._[2], argv);
+			return pickFile(argv._[1], argv._[2], argv, once);
 		} else if (argv._[1]) {
 			return pickFile(argv._[1], false, argv);
 		} else {
