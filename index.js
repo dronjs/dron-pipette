@@ -92,7 +92,7 @@ module.exports = function factory(argv) {
 
 	if (argv._) {
 		if (argv._[2]) {
-			return pickFile(argv._[1], argv._[2], argv, once);
+			return pickFile(argv._[1], argv._[2], argv, true);
 		} else if (argv._[1]) {
 			return pickFile(argv._[1], false, argv);
 		} else {
